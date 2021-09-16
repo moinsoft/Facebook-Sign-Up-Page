@@ -1,7 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*=====================
+Main Sectiom
+=======================*/
+
+.main-area {
+  background: #f0f2f5;
+  padding: 100px 0 200px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+.form-area {
+  width: 50%;
+}
+
+.logo img {
+  width: 250px;
+  margin: -25px;
+}
+
+.logo p {
+  font-size: 27px;
+  margin-top: 10px;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-area form {
+  background: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.logIn {
+  border-bottom: 1px solid #dadde1;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.logIn input {
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.logIn input[type="email"],
+.logIn input[type="password"] {
+  padding: 16px 10px;
+  border: 1px solid #dddfe2;
+}
+
+.logIn input[type="email"]::placeholder,
+.logIn input[type="password"]::placeholder {
+  font-size: 17px;
+  color: #90949c;
+}
+
+.logIn input[type="email"]:focus,
+.logIn input[type="password"]:focus {
+  border: 1px solid #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.logIn input[type="submit"] {
+  background: #1877f2;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 16px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.logIn input[type="submit"]:hover {
+  background: #166fe5;
+}
+
+.password-reset {
+  color: #1877f2;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.password-reset:hover {
+  text-decoration: underline;
+}
+
+.newAccount {
+  display: inline-block;
+  text-decoration: none;
+  background: #42b72a;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.newAccount:hover {
+  background: #36a420;
+}
+
+.create-page {
+  margin-top: 40px;
+}
+
+.create-page p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.create-page p a:hover {
+  text-decoration: underline;
 }
